@@ -1,10 +1,7 @@
 #include <MPU6050_tockn.h> //scl =A5 / sda =A4 /vcc =5v / grn =grn
 #include <Servo.h>
 
-int ledping =7;  //led pin
-int ledpinr =6;
-
-int buzzer  =5; // buzzer pin 
+// buzzer pin 
 
 int servopin1 = 9;  // Servo pin
 int servopin2 = 10;
@@ -33,16 +30,11 @@ void setup() {
   servo3.attach(servopin3);
   servo4.attach(servopin4);
 
-  pinMode(7,OUTPUT);
-  pinMode(6,OUTPUT);
-  pinMode(5,OUTPUT);
+
 }
 
 void loop() {
 
-  digitalWrite(ledpinr, HIGH);
-  digitalWrite(ledping, HIGH);
-  digitalWrite(buzzer, HIGH);
   mpu6050.update();
 
   if(millis() - timer > 1000){
