@@ -10,8 +10,10 @@ stage 1 of development
 Simple rocket flight controll system for the pitch and roll axis
 
 Pin out:
+
 wiring
 Gyroscope
+
 scl =A5
 
 sda =A4
