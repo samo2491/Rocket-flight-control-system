@@ -21,13 +21,14 @@ vcc =5v
 grn =grn
 
 servo
+
 int servopin1 = 9;
 
 int servopin2 = 10;
 
 int servopin3 = 11;
 
-int servopin4 = 12;
+int servopin4 = 6;
 
 ###✍️ Authors
 This was made by samo2491 I am a young tech enthousiest that wants to try
