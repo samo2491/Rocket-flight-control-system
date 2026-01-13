@@ -12,11 +12,13 @@ const int fin4Pin = 12;
 
 // Servos
 Servo fin1, fin2, fin3, fin4;
+//
+// PID control vairiables
+const float gain = 0.8;  // P
 
 // Constants
 const int center = 90;
-const float gyroDeadZone = 1.5;     // deg/s
-const float gain = 0.8;             // tuning parameter
+const float gyroDeadZone = 1.5;     // deg/s 
 const int maxDeflection = 10;        // degrees (VERY IMPORTANT)
 
 unsigned long lastUpdate = 0;
@@ -72,3 +74,4 @@ void centerFins() {
   fin3.write(center);
   fin4.write(center);
 }
+
